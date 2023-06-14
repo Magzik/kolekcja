@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Baza płyt    </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .category {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .item img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    .item p {
+      margin: 0;
+      text-align: center;
+    }
+
+    .item b {
+      text-align: center;
+    }
+
+    .item .price {
+      font-weight: bold;
+      color: green;
+    }
+
+    .item .purchase-price {
+      color: red;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .item .current-value {
+      color: darkgreen;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    /* Dodatkowy styl dla wyglądu kolumn */
+    @media only screen and (min-width: 600px) {
+      .category {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media only screen and (min-width: 900px) {
+      .category {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .category {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Baza płyt CD</h1>
+  </header>
+
+  <main>
+    <h2>Płyty CD</h2>
+    <div class="category">
+      <div class="item">
+        <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=500,height=500,/c/rodzinny-biznes-b-iext122700002.jpg" alt="Rodzinny Biznes">
+        <p>Rodzinny Biznes</p>
+        <b>2115</b>
+        <p class="purchase-price">Zakup: 75.00zł</p>
+        <p class="current-value">Wartość: 44.99zł</p>
+      </div>
+      <div class="item">
+        <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=500,height=500,/c/mowa-wezy-b-iext126815357.jpg" alt="Mowa Węży">
+        <p>Mowa Węży</p>
+        <b>Asster</b>
+        <p class="purchase-price">Zakup: 80zł</p>
+        <p class="current-value">Wartość: 90zł</p>
+      </div>
+      <div class="item">
+        <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=500,height=500,/c/mlody-say10-b-iext126364232.jpg" alt="młody say10">
+        <p>młody say10</p>
+        <b>Chivas</b>
+        <p class="purchase-price">Zakup: 36.99zł</p>
+        <p class="current-value">Wartość: 43.00zł</p>
+      </div>
+      <div class="item">
+        <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=500,height=500,/c/club2020-b-iext127168057.jpg" alt="CLUB2020">
+        <p>CLUB2020</p>
+        <b>CLUB2020</b>
+        <p class="purchase-price">Zakup: 49.99zł</p>
+        <p class="current-value">Wartość: 43.01zł</p>
+      </div>
+      <div class="item">
+        <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=500,height=500,/c/sezon-3-b-iext103550168.jpg" alt="Sezon 3">
+        <p>Sezon 3</p>
+        <b>Ekipa</b>
+        <p class="purchase-price">Zakup: 18zł</p>
+        <p class="current-value">Wartość: 32.90zł</p>
+        <div class="item">
+          <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=500,height=500,/c/notatki-z-marginesu-b-iext121818201.jpg" alt="Notatki z Marginesu">
+          <p>Notatki z Marginesu</p>
+          <b>Young Igi</b>
+          <p class="purchase-price">Zakup: 18zł</p>
+          <p class="current-value">Wartość: 32.90zł</p>
+        </div>
+        <div class="item">
+          <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=500,height=500,/c/sezon-3-b-iext103550168.jpg" alt="Sezon 3">
+          <p>Sezon 3</p>
+          <b>Ekipa</b>
+          <p class="purchase-price">Zakup: 18zł</p>
+          <p class="current-value">Wartość: 32.90zł</p>
+        </div>
+        <div class="item">
+          <img src="https://ecsmedia.pl/cdn-cgi/image/format=webp,width=500,height=500,/c/sezon-3-b-iext103550168.jpg" alt="Sezon 3">
+          <p>Sezon 3</p>
+          <b>Ekipa</b>
+          <p class="purchase-price">Zakup: 18zł</p>
+          <p class="current-value">Wartość: 32.90zł</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
 
